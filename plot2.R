@@ -25,7 +25,8 @@ positions <- seq(from = min(data2$DateTime), to = max(data2$DateTime), length.ou
 axis(side = 1, at = positions, labels = c("Thu", "Fri", "Sat"))
 
 ## Create PNG File
-
+dev.copy(device = png, "plot2.png", 480, 480)
+dev.off()
 
 
 
