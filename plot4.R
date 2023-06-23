@@ -38,7 +38,7 @@ lines(x = data2$DateTime, y = data2$Sub_metering_2, type = "l", col ="red")
 lines(x = data2$DateTime, y = data2$Sub_metering_3, type = "l", col ="blue")
 positions <- seq(from = min(data2$DateTime), to = max(data2$DateTime), length.out = 3)
 axis(side = 1, at = positions, labels = c("Thu", "Fri", "Sat"))
-legend("topright", lty=1, lwd=1, , col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.5, box.lwd = 0)
+legend("topright", lty=1, lwd=1, , col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.5, bty = "n")
 
 ## Plot 4
 plot(x = data2$DateTime, y = data2$Global_reactive_power, type = "l", xaxt = "n", ylab = "Global_reactive_power", xlab = "datetime")
